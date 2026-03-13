@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Мои заметки</title>
+
+<h1 style="text-align:center">Главное меню</h1>
+
+<a href="/get"><button>Показать заметки</button></a>
+<a href="/post"><button>Добавить заметку</button></a>
+<a href="/put"><button>Редактировать заметку</button></a>
+<a href="/patch"><button>Изменить часть</button></a>
+<a href="/delete"><button>Удалить заметку</button></a>
+
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f3f6ff;
+    margin:0;
+}
+
+header{
+    background:#4682B4;
+    color:white;
+    text-align:center;
+    padding -5px;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0px 2px 6px rgba(0,0,0,0.1);
+}
+
+input,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+button{
+    padding:7px 12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.add{
+    background:#6c8cff;
+    color:white;
+}
+
+.delete{
+    background:#ff6b6b;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1 style="color: #000000">Note API</h1>
+<p style="color: #000000">Мои заметки</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h3>Создать заметку</h3>
+
+<input id="title" placeholder="Название">
+
+<textarea id="content" placeholder="Текст заметки"></textarea>
+
+<button class="add" onclick="createNote()">Добавить</button>
+
+</div>
+
+<div id="notes"></div>
+
+</div>
+
+
+</body>
+</html>
