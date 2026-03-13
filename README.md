@@ -1,6 +1,3 @@
-# FastAPI2
-123
-bgngdk,hb fs/
 
 
 
